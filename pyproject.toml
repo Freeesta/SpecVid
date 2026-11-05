@@ -1,0 +1,15 @@
+[project]
+name = "specvid"
+version = "0.1.0"
+description = "Physics models and Manim animations for LC-UV-ESI-QqQ mass spectrometry teaching"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "matplotlib", "manim"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["core", "core.quad", "scenes"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
